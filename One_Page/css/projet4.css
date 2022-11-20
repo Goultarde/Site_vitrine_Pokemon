@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+.stylenavbar{
+    background :  rgba(0, 0, 0, 0.6);
+    font-family: 'Secular One';
+    font-size:large;
+}
+.stylebtn{
+    font-family: 'Secular One';
+    font-size:large;
+}
+.stylenavbar .nav-link{
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+.stylenavbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-bottom-color: white;
+}
+
+body{
+    background: #000;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.8)
+        ),
+        url(../img/arceus\ fhd.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: no-repeat;
+    background-size: cover;
+}
+
+
+.header-content{
+    padding-top: 400px;
+    padding-bottom: 50px;
+}
+.banner2{
+        background: #000;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.8)
+            ),
+            url(../img//Pokeballbleu.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.banner3{
+    background: #000;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.8)
+        ),
+        url(../img/elector\ w1.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.content_banner4{
+    border: 12px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.8));
+    box-shadow: 0 0 20px 1px rgb(15, 13, 13);
+}
+.banner4{
+    background: url(../img/sulfura.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backstylewhite{
+    background: rgb(227, 227, 227);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    
+}
+.roundbord{
+    border-radius: 10px;    
+}
+.opacity{
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+
+
+
+.text-justify{
+    text-align: justify;
+    
+}
+.navbar:hover 
+{ background-color: rgb(54, 54, 54); color: 54, 54, 54; }
+
+.licence{
+    text-align: center;
+}
+.pika{
+    height: 100px;
+}
+.espace_petit{
+    margin: 10px;
+}
+.espace_moyen{
+    margin: 50px;
+}.espace_large{
+    margin: 100px;
+}
+
+.btn{
+    color: #fff;
+}
+.btn:hover{
+    color: #fff;
+    background-color: grey;
+}
+
+.carousel-caption{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 100px;
+}
+.img-responsive{
+    max-width: 80%;
+    height: auto;
+}
+
+.img-responsive-evoli{
+    max-width: 50%;
+    height: auto;
+}
+.formulaire{
+    background: url();
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: no-repeat;
+}
+
+.espacecol{
+    margin-top: 150px;
+}
+
+.copyright{
+    background :  rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-family: 'Secular One', serif;
+}
+
