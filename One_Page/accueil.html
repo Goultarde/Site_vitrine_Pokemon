@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!--meta tags requis -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pokemon</title>
+		<link rel="shortcut icon" href="masterball.png" />
+		<!-- Link CSS de bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<!-- Mon fichier Css CSS -->
+		<link rel="stylesheet" href="css/projet4.css" />
+	</head>
+
+	<body>
+		<header>
+			<!--Création d'une navbar-->
+			<nav class="stylenavbar navbar navbar-expand-lg navbar-dark fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="http://pokemon.com" target="_blank">
+						<!--logo pokemon qui renvoie vers le site officiel de ce dernier-->
+						<img src="img/logo pokemon.png" alt="logo pokemon" height="32" />
+					</a>
+					<button
+						class="navbar-toggler"
+						id="navbarNavDropdown"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- les éléments de la navbar navbar-->
+					<div class="collapse navbar-collapse text-uppercase" id="navbarNavDropdown">
+						<ul class="navbar-nav mx-auto">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#acceuil"
+									>Acceuil</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#règles_du_jeu">Règles du Jeu</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-item dropdown">
+						<button
+							class="btn dropdown-toggle stylebtn"
+							type="button"
+							id="dropdownMenuButton"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							Menu
+						</button>
+						<div class="dropdown-menu stylebtn" aria-labelledby="dropdownMenuButton">
+							<a
+								class="dropdown-item"
+								href="https://www.pokemon.com/fr/pokedex/"
+								target="_blank"
+								>Pokedex</a
+							>
+							<a
+								class="dropdown-item"
+								href="https://www.pokemon.com/fr/actus-pokemon/	"
+								target="_blank"
+								>Actualité</a
+							>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<div class="header-content" id="acceuil">
+				<a href="https://pokemon.fandom.com/fr/wiki/Wiki_Pok%C3%A9mon">
+					<img src="img/pokeball.png" width="200" class="d-block mx-auto" />
+				</a>
+				<h3 class="text-center text-light"></h3>
+			</div>
+		</div>
+		<!--Première section-->
+		<section class="banner pt-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-7 roundbord backstylewhite">
+						<div class="text-center">
+							<h1 class="primary-color">
+								<img class="pika img-fluid" src="img/pikachu.png" />La Licence Pokemon
+								<br />
+							</h1>
+						</div>
+						<p class="text-justify">
+							Dans l'univers des Pokémon , les animaux du monde réel n'existent pas
+							(ou très peu). Le monde est peuplé de Pokémon, des créatures qui vivent
+							en harmonie avec les humains, mais possèdent des aptitudes quasiment
+							impossibles pour des animaux du monde réel, telles que cracher du ,
+							comme Dracaufeu, ou encore générer de grandes quantités d'electricité,
+							comme Magnéti. Chaque sorte de Pokémon possède un nom, qui peut à la
+							fois être utilisé pour parler de Pokémon individuels ou de l'ensemble
+							des Pokémon de la même sorte. Certains Pokémon dits « légendaires » sont
+							les seuls représentants de leur sorte et dans les jeux récents sont des
+							entités incarnant une puissance naturelle. Dans la série animée, les
+							Pokémon ne peuvent prononcer en règle générale que leur nom, mais il
+							existe quelques cas rares où des Pokémon ont appris un langage humain
+							comme le fameux Miaouss de la Team Rocket. <br />
+							Des humains utilisent ces aptitudes dans leurs activités
+							professionnelles : ainsi les Caninos de l'Agent Jenny l'aident à
+							poursuivre les criminels.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Deuxième section-->
+		<section class="banner2">
+			<div class="container">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="espace_moyen"></div>
+						<div class="col-2 roundbord backstylewhite">
+							<div class="text-center">
+								<h5>Partez à l'aventure!</h5>
+							</div>
+						</div>
+						<div class="espace_moyen"></div>
+					</div>
+					<div class="row">
+						<div class="col-9 mx-auto roundbord">
+							<div class="container">
+								<div class="ratio ratio-16x9">
+									<iframe
+										class="embed-responsive-item"
+										src="https://www.youtube.com/embed/FYIAE9xw4e4"
+										title="Pokémon Écarlate & Pokémon Violet - Bienvenue à Paldea ! (Nintendo Switch)"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="espace_moyen"></div>
+				<div class="row justify-content-center">
+					<div class="col-6 carousel_acceuil">
+						<div
+							id="carouselExampleIndicators"
+							class="carousel slide"
+							data-ride="carousel"
+						>
+							<ol class="carousel-indicators">
+								<li
+									data-target="#carouselExampleIndicators"
+									data-slide-to="0"
+									class="active"
+								></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img
+										src="img/Salamèche.jpg"
+										alt="Salamèche"
+										class="d-black w-100"
+									/>
+									<div class="carousel-caption d-none d-md-block">
+										<h5>Salamèche</h5>
+										<p>Type Feu</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img src="img/carapuce.jpg" alt="carapuce" class="d-black w-100" />
+									<div class="carousel-caption d-none d-md-block">
+										<h5>carapuce</h5>
+										<p>Type eau</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="img/bulbizard.jpg"
+										alt="bulbizard"
+										class="d-black w-100"
+									/>
+									<div class="carousel-caption d-none d-md-block roundbord">
+										<h5>bulbizard</h5>
+										<p>Type plante</p>
+									</div>
+								</div>
+							</div>
+							<a
+								class="carousel-control-prev"
+								href="#carouselExampleIndicators"
+								role="button"
+								data-slide="prev"
+							>
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only"></span>
+							</a>
+							<a
+								class="carousel-control-next"
+								href="#carouselExampleIndicators"
+								role="button"
+								data-slide="next"
+							>
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-5 backstylewhite roundbord">
+						<h2>Les différents type de pokemon</h2>
+						Il existe dix-huit types (voir la liste ci-contre). Chaque Pokémon possède
+						un ou deux types qui conditionnent la plupart de ses attaques et
+						caractérisent ses forces et ses faiblesses vis-à-vis des autres types,
+						organisées comme le pierre-papier-ciseaux pour équilibrer les combats13. De
+						nombreux Pokémon se transforment en une nouvelle sorte (ce phénomène est
+						appelé une « évolutionN 8 ») après avoir atteint un certain niveau
+						d'expérience ou d'autres critères plus complexes (objets, échange, etc) ;
+						cela leur donne souvent de meilleures statistiques de combat et parfois un
+						nouveau type. En tout, un Pokémon de base peut évoluer au plus deux foisN 9.
+						Quelques Pokémon peuvent évoluer de plusieurs manières différentes
+						(l'archétype de ces Pokémon est Évoli).
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-6 backstylewhite roundbord">
+						<h2></h2>
+						<p>
+							Pour savoir si une technique va être efficace ou non, il faut regarder
+							son type et celui du Pokémon défenseur. Le type du Pokémon attaquant n’a
+							pas d’importance (pour le moment en tout cas, comme on le verra un peu
+							plus tard). <br />
+							En fonction des affinités, une attaque peut se révéler efficace (), peu
+							efficace (x 0,5), très efficace (x 2) ou inefficace (x 0). Et pour
+							savoir ce qui est efficace contre qui, il suffit de se référer au
+							tableau des affinités :
+						</p>
+						<img src="img/table_des_type.png" alt="" class="img-fluid rounded-2" />
+					</div>
+					<div class="col-5">
+						<a href="#">
+							<img
+								class="img-fluid"
+								src="img/PokemonTypes.png"
+								alt="les différentes types de pokemon"
+							/>
+						</a>
+						<a href="#">
+							<img src="img/tout_les_pokemon.png" alt="" class="img-fluid" />
+						</a>
+					</div>
+					<div class="row justify-content-center">
+						<div class="espace_moyen"></div>
+						<div class="col-8 roundbord backstylewhite">
+							<div class="text-center">
+								<img src="img/les evolutions.png" alt="Les evolutions" class="img-responsive-evoli" />
+								<!-- CODE ALTERNATIF
+									<h2 class="primary-color">
+										<img class="pika img-fluid" src="img/evolie.png" />Les
+										evolutions<img class="pika img-fluid" src="img/evolie.png" /><br />
+									</h2>-->
+							</div>
+							<p class="text-justify">
+								L'évolution est un des mécanismes les plus importants des jeux vidéo
+								Pokémon et dans tout l'univers de fiction couvert par la franchise.
+								Pour un Pokémon, l'évolution consiste à changer de variété pour
+								devenir plus puissant (les points de vie, de vitesse... augmentent).
+								Elle peut avoir des conséquences sur le type, la possibilité
+								d'apprendre des attaques... L'évolution est irréversible. Selon sa
+								variété, un Pokémon évolue de zéro à deux fois. Toutefois, la
+								plupart des Pokémon légendaires, qui n'évoluent pas, sont
+								généralement encore plus puissants.
+							</p>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-5">
+							<a href="#">
+								<img src="img/evoli_evolu1.png" alt="" class="img-fluid rounded-4" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="espace_moyen"></div>
+				</div>
+			</div>
+		</section>
+		<!-- Troisième section-->
+		<section class="banner3 pt-5" id="règles_du_jeu">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-3 my-auto">
+						<!--Easter Egee-->
+						<a href="https://trex-runner.com/">
+							<img src="img/leviavsdraco.jpg" alt="" class="img-fluid rounded-5" />
+						</a>
+					</div>
+					<div class="col-5 roundbord opacity">
+						<div class="text-center">
+							<h2 class="primary-color">
+								Règles du Jeu Pokemon<img
+									class="pika img-fluid"
+									src="img/prof chen.png"
+								/>
+								<br />
+							</h2>
+						</div>
+						<p class="text-justify elector">
+							Certains dressent les Pokémon pour organiser des combats entre eux,
+							transportant généralement les Pokémon dans des Poké Balls, des balles
+							compactes où un Pokémon peut être contenu. C'est ainsi que débute
+							l'aventure dans les jeux principaux de la licence pokemon. Ces dresseurs
+							Pokémon voyagent à travers le monde dans le but d'attraper le plus grand
+							nombre de Pokémon, puis éventuellement devenir Maître Pokémon, un titre
+							donné au dresseur ayant battu le maître de la ligue. Certains dresseurs
+							enregistrent les informations des Pokémon qu'ils ont capturés ou
+							observés dans un Pokédex, un appareil électronique qui répertorie et
+							affiche les informations sur les différents Pokémon. À partir de l'âge
+							de dix ans, il est possible de commencer son apprentissage de dresseur
+							en recevant une licence de la Ligue Pokémon. L'apprentissage consiste à
+							partir capturer des Pokémon dans leurs habitats naturels, puis à les
+							entrainer au combat. <br />
+							Les matchs Pokémon consistent en combats entre les Pokémon de deux
+							dresseurs au tour par tour, et se terminent quand tous les Pokémon de
+							l'un d'entre eux sont KO. La mort des Pokémon est donc évitée, et les
+							Pokémon peuvent être soignés au Centre Pokémon, un bâtiment où les
+							infirmières guérissent les Pokémon blessés. Pour participer à des
+							compétitions, les dresseurs peuvent se déplacer aux différentes Arènes
+							Pokémon où un badge leur est offert s'ils sortent victorieux d'un match
+							contre le champion d'arène10. Après avoir gagné tous les badges de la
+							région, un dresseur peut partir au siège de la Ligue Pokémon pour
+							affronter quatre dresseurs d'élite, souvent appelés le « Conseil des 4
+							». Ce n'est qu'après avoir battu ces quatre dresseurs que le dresseur
+							peut affronter le Maître de la Ligue12.
+						</p>
+					</div>
+					<div class="col-3 my-auto">
+						<a href="#">
+							<img src="img/fambvsouist.jpg" alt="" class="img-fluid rounded-5" />
+						</a>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<img src="" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Quatrième section-->
+		<section class="banner4" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="espace_large"></div>
+					<iframe
+						class="content_banner4"
+						src="https://docs.google.com/forms/d/e/1FAIpQLSdrSKA8xLGIsd6NWf9BI-0iArdctsQscN2f5-I_yykt06TSFw/viewform?embedded=true"
+						width="640"
+						height="431"
+						frameborder="0"
+						marginheight="0"
+						marginwidth="0"
+						>Chargement…</iframe
+					>
+				</div>
+			</div>
+			<div class="row"><div class="espace_petit"></div></div>
+		</section>
+
+		<footer class="text-center">
+			<!-- Copyright -->
+			<div class="text-center p-3 copyright">
+				<p>© 2022 Copyright: Harouna and Guillaume</p>
+			</div>
+			<!-- Copyright -->
+		</footer>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
