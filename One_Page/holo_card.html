@@ -1,0 +1,3852 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Pokémon Cards CSS Holographic Effect</title>
+		<meta
+			name="description"
+			content="An exploration of what's possible with CSS for Pokemon Cards, simeydotme (Simon Goellner)"
+		/>
+
+		<link rel="canonical" href="https://poke-holo.simey.me" />
+		<link rel="icon" href="favicon.png" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&amp;family=Roboto:ital,wght@0,300;0,700;1,300;1,700&amp;display=swap"
+		/>
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/cards.css" />
+		<script type="module" crossorigin="" src="/assets/index.ba83f3dc.js"></script>
+		<link rel="stylesheet" href="/assets/index.fabc1ebb.css" />
+	</head>
+	<body>
+		<!-- Google tag (gtag.js) -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SKXCY5997"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-3SKXCY5997', {
+				linker: { domains: ['poke-holo.simey.me', 'deck-24abcd.netlify.app'] },
+			});
+		</script>
+
+		<div id="app">
+			<main>
+				<header>
+					<h1 id="⚓-top">Pokemon Cards <sup>V2</sup></h1>
+					<p class="author">
+						By
+						<a href="https://twitter.com/simeydotme"
+							><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<title>Twitter</title>
+								<path
+									d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+								></path>
+							</svg>
+							@simeydotme</a
+						>
+						|
+						<em
+							><a href="https://github.com/simeydotme/pokemon-cards-css"
+								><svg
+									role="img"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<title>GitHub</title>
+									<path
+										d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+									></path>
+								</svg>
+								Simon Goellner</a
+							></em
+						>
+					</p>
+					<section class="intro" id="⚓-intro">
+						<p>
+							A collection of <mark>advanced CSS</mark> styles to create
+							<mark>realistic-looking effects</mark> for the faces of Pokemon cards.
+						</p>
+						<br />
+						<p>
+							The cards use <mark>3d transforms</mark>, <mark>filters</mark>,
+							<mark>blend modes</mark>, <mark>css gradients</mark> and interactions to
+							provide a unique experience when taking a closer look!
+						</p>
+					</section>
+					<div class="showcase">
+						<div
+							class="card svelte-166jv0z"
+							data-number="190"
+							data-subtypes="basic v"
+							data-supertype="pokémon"
+							data-rarity="rare ultra"
+							data-gallery="false"
+							style="
+								--mx: 50%;
+								--my: 50%;
+								--tx: 0px;
+								--ty: 0px;
+								--s: 1;
+								--o: 0;
+								--rx: 0deg;
+								--ry: 0deg;
+								--pos: 50% 50%;
+								--posx: 50%;
+								--posy: 50%;
+								--hyp: 0;
+								--galaxybg: center 836px;
+							"
+						>
+							<div class="card__translater svelte-166jv0z">
+								<button
+									class="card__rotator svelte-166jv0z"
+									aria-label="Expand the Pokemon Card; Morpeko V."
+									tabindex="0"
+								>
+									<img
+										class="card__back svelte-166jv0z"
+										src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+										alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+										loading="lazy"
+										width="660"
+										height="921"
+									/>
+									<div class="card__front svelte-166jv0z">
+										<img
+											src="https://images.pokemontcg.io/swsh1/190_hires.png"
+											alt="Front design of the Morpeko V Pokemon Card, with the stats and info around the edge"
+											loading="lazy"
+											width="660"
+											height="921"
+											class="svelte-166jv0z"
+										/>
+										<div
+											class="card__shine basic v pokémon svelte-8e4zv4"
+										></div>
+										<div
+											class="card__glare basic v rare ultra svelte-y0attf"
+										></div>
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+					<section class="info">
+						<h2><em>(Go ahead, try clicking a card to take a closer look!)</em></h2>
+
+						<hr />
+
+						<p class="small">
+							Under the hood, I'm using SvelteJS to handle interactivity and state;
+							assigning values to css custom properties (variables) which in-turn
+							drive the effects and 3d transforms.
+							<a href="https://github.com/simeydotme/pokemon-cards-css"
+								>Source code is in the repository</a
+							>, but it's subject to change as I morph it in to an actual App.
+						</p>
+					</section>
+				</header>
+				<h2 id="⚓-common"><a href="#⚓-common">Common &amp; Uncommon</a></h2>
+				<p>
+					All cards get a 3d rotation with CSS based on the cursor position.<br />
+					The default basic non-holo cards simply apply a
+					<mark>flare/glare effect</mark> to the card which follows the mouse.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z"
+						data-number="1"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="common"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1143px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Bulbasaur."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/sm35/1_hires.png"
+										alt="Front design of the Bulbasaur Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic common svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="33"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="common"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1255px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Squirtle."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/sm10/33_hires.png"
+										alt="Front design of the Squirtle Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic common svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="7"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="common"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1002px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Charmander."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/sm115/7_hires.png"
+										alt="Front design of the Charmander Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic common svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="35"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="common"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 747px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Morpeko."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh45/35_hires.png"
+										alt="Front design of the Morpeko Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic common svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="120"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="common"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 10px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Bidoof."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9/120_hires.png"
+										alt="Front design of the Bidoof Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic common svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="142"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="uncommon"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 446px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Dedenne."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/sm8/142_hires.png"
+										alt="Front design of the Dedenne Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic uncommon svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-holo"><a href="#⚓-holo">Holofoil Rare</a></h2>
+				<p>
+					Holo cards have an additional <mark>vertical beam holo effect</mark>. <br />
+					This uses a combintation of <mark>repeating gradients and filters</mark>, with
+					<mark>clip-path</mark> to mask the holo areas for each stage. To get the holo
+					effect to change while rotating the card I set the background-position of each
+					gradient layer based on cursor.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z"
+						data-number="24"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="rare holo"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 795px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Articuno."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/pgo/24_hires.png"
+										alt="Front design of the Articuno Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic rare holo svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="29"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="rare holo"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1246px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Zapdos."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/pgo/29_hires.png"
+										alt="Front design of the Zapdos Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic rare holo svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="12"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="rare holo"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 232px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Moltres."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/pgo/12_hires.png"
+										alt="Front design of the Moltres Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic rare holo svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="86"
+						data-subtypes="stage 1"
+						data-supertype="pokémon"
+						data-rarity="rare holo"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 460px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Kleavor."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh10/86_hires.png"
+										alt="Front design of the Kleavor Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine stage 1 pokémon svelte-8e4zv4"></div>
+									<div class="card__glare stage 1 rare holo svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="132"
+						data-subtypes="supporter"
+						data-supertype="trainer"
+						data-rarity="rare holo"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1073px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Boss's Orders."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9/132_hires.png"
+										alt="Front design of the Boss's Orders Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine supporter trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare supporter rare holo svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="43"
+						data-subtypes="stage 2"
+						data-supertype="pokémon"
+						data-rarity="rare holo"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1110px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Tyranitar."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/pgo/43_hires.png"
+										alt="Front design of the Tyranitar Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine stage 2 pokémon svelte-8e4zv4"></div>
+									<div class="card__glare stage 2 rare holo svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-galaxy"><a href="#⚓-galaxy">Galaxy/Cosmos Holofoil</a></h2>
+				<p>
+					Similar to the Holofoil, but this uses a special image
+					<mark>background of a galaxy effect</mark> with a
+					<mark>gradient rainbow set to color-dodge &amp; color-burn</mark> on top.
+				</p>
+				<h3>An instant classic for any PTCG fan!</h3>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="swsh039"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="rare holo galaxy"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 76px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Pikachu."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swshp/SWSH039_hires.png"
+										alt="Front design of the Pikachu Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare basic rare holo galaxy svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="60"
+						data-subtypes="supporter"
+						data-supertype="trainer"
+						data-rarity="rare holo galaxy"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1034px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Professor's Research."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh45/60_hires.png"
+										alt="Front design of the Professor's Research Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine supporter trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare supporter rare holo galaxy svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="swsh127"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="rare holo galaxy"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 123px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Eevee."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swshp/SWSH127_hires.png"
+										alt="Front design of the Eevee Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare basic rare holo galaxy svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-radiant"><a href="#⚓-radiant">Radiant Holofoil</a></h2>
+				<p>
+					The newest holofoil added to the series! <br />
+					The radiant effect proved
+					<mark>very difficult to emulate</mark>
+					without crazy math, so I settled with a
+					<mark>criss-cross linear gradient pattern</mark> that moves across the card.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="4"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="radiant rare"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 167px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Radiant Venusaur."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/pgo/4_hires.png"
+										alt="Front design of the Radiant Venusaur Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic radiant rare svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="46"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="radiant rare"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 803px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Radiant Greninja."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh10/46_hires.png"
+										alt="Front design of the Radiant Greninja Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic radiant rare svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="27"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="radiant rare"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1477px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Radiant Heatran."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh10/27_hires.png"
+										alt="Front design of the Radiant Heatran Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic radiant rare svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-trainer-gallery-holo">
+					<a href="#⚓-trainer-gallery-holo">Trainer Gallery Holofoil</a>
+				</h2>
+				<p>
+					The effect for Trainer Gallery holofoils gives it a
+					<mark>kind of metallic effect with iridescent shine</mark>. This is achieved
+					with a <mark>large color dodge linear gradient</mark>, and a
+					<mark>hard-light radial gradient</mark> on top, at the cursor position, to give
+					the shimmer.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="tg241"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="rare holo"
+						data-gallery="true"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 720px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Pikachu."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/sm12/241_hires.png"
+										alt="Front design of the Pikachu Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic rare holo svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="tg11"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="rare holo"
+						data-gallery="true"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 667px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Eevee."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9tg/TG11_hires.png"
+										alt="Front design of the Eevee Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic rare holo svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="tg07"
+						data-subtypes="basic"
+						data-supertype="pokémon"
+						data-rarity="rare holo"
+						data-gallery="true"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1225px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Dedenne."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9tg/TG07_hires.png"
+										alt="Front design of the Dedenne Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic rare holo svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-v"><a href="#⚓-v">Pokemon V</a></h2>
+				<p>
+					V cards have a <mark>diagonal holographic effect</mark> which that appears to
+					travel in opposite directions when you tilt the card into the light.
+				</p>
+				<p>
+					This effect is achieved with <mark>multiple background gradients</mark> and I
+					change the background positions based on the cursor x/y. The gradients are set
+					to color-dodge, and there's a subtle svg noise effect.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="21"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare holo v"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 558px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Houndoom V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh3/21_hires.png"
+										alt="Front design of the Houndoom V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare basic v rare holo v svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="141"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare holo v"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 477px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Snorlax V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh1/141_hires.png"
+										alt="Front design of the Snorlax V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare basic v rare holo v svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="53"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare holo v"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1218px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Hisuian Typhlosion V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh10/53_hires.png"
+										alt="Front design of the Hisuian Typhlosion V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare basic v rare holo v svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-v-full-art">
+					<a href="#⚓-v-full-art">Pokemon V <sup>(Full Art)</sup></a>
+				</h2>
+				<p>
+					Similar to the Pokemon V effect, Full-Art cards
+					<mark>use diagonal gradients</mark>, but they have
+					<mark>additional texture</mark> when looked at from certain angles. This is
+					achieved with an
+					<mark>additional background image with an exclusion filter</mark>. The effect is
+					also more vibrant which adds to the metallic look.
+				</p>
+				<p>
+					The texture effect is not identical to reality as the real cards each have a
+					unique pattern that follows the art.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="250"
+						data-subtypes="basic v fusion strike"
+						data-supertype="pokémon"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1160px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Mew V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh8/250_hires.png"
+										alt="Front design of the Mew V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div
+										class="card__shine basic v fusion strike pokémon svelte-8e4zv4"
+									></div>
+									<div
+										class="card__glare basic v fusion strike rare ultra svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="183"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1134px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Scizor V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh3/183_hires.png"
+										alt="Front design of the Scizor V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic v rare ultra svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z"
+						data-number="190"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 502px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Morpeko V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh1/190_hires.png"
+										alt="Front design of the Morpeko V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic v rare ultra svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-v-alternate-art">
+					<a href="#⚓-v-alternate-art">Pokemon V <sup>(Alternate Art)</sup></a>
+				</h2>
+				<p>
+					Alternate Art Pokemon V cards have
+					<mark>practically the same holo effect as the Ultra Rare (Full Art) cards</mark
+					>. The only difference is the pattern texture.
+				</p>
+				<p>The effect looks somewhat different though due to the type of artwork.</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="swsh179"
+						data-subtypes="basic v single strike"
+						data-supertype="pokémon"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 662px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Flareon V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swshp/SWSH179_hires.png"
+										alt="Front design of the Flareon V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div
+										class="card__shine basic v single strike pokémon svelte-8e4zv4"
+									></div>
+									<div
+										class="card__glare basic v single strike rare ultra svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="swsh181"
+						data-subtypes="basic v rapid strike"
+						data-supertype="pokémon"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 519px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Vaporeon V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swshp/SWSH181_hires.png"
+										alt="Front design of the Vaporeon V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div
+										class="card__shine basic v rapid strike pokémon svelte-8e4zv4"
+									></div>
+									<div
+										class="card__glare basic v rapid strike rare ultra svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="swsh183"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 519px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Jolteon V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swshp/SWSH183_hires.png"
+										alt="Front design of the Jolteon V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic v rare ultra svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="177"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1239px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Origin Forme Dialga V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh10/177_hires.png"
+										alt="Front design of the Origin Forme Dialga V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic v rare ultra svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="245"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 157px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Celebi V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh8/245_hires.png"
+										alt="Front design of the Celebi V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic v rare ultra svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="192"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 817px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Dragonite V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh7/192_hires.png"
+										alt="Front design of the Dragonite V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div class="card__glare basic v rare ultra svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-v-max"><a href="#⚓-v-max">VMax</a></h2>
+				<p>
+					The gradient effect of Pokemon VMax is more subtle, using a
+					<mark>larger background gradient</mark> which moves more slowly. But the
+					<mark>texture effect is more pronounced</mark>.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="29"
+						data-subtypes="vmax"
+						data-supertype="pokémon"
+						data-rarity="rare holo vmax"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1026px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Gyarados VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh7/29_hires.png"
+										alt="Front design of the Gyarados VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vmax pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare vmax rare holo vmax svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="sv111"
+						data-subtypes="vmax"
+						data-supertype="pokémon"
+						data-rarity="rare holo vmax"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 286px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Lapras VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh45sv/SV111_hires.png"
+										alt="Front design of the Lapras VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vmax pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare vmax rare holo vmax svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="29"
+						data-subtypes="vmax"
+						data-supertype="pokémon"
+						data-rarity="rare holo vmax"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 610px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Kingler VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9/29_hires.png"
+										alt="Front design of the Kingler VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vmax pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare vmax rare holo vmax svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-v-max-alternate">
+					<a href="#⚓-v-max-alternate">VMax <sup>(Alternate/Rainbow)</sup></a>
+				</h2>
+				<p>
+					There's some VMax cards which show a <mark>full, or alternate artwork</mark>.
+					These are
+					<mark>classed as "rainbow rare"</mark>
+					and have a similar effect to the rainbow cards. It's a really
+					<mark>vibrant and glittery overlay</mark>.
+				</p>
+				<p>
+					This is achieved with a <mark>background image of glitter/sparkles</mark>, and a
+					texture pattern background image, sandwiching the usual linear gradients.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="215"
+						data-subtypes="vmax single strike"
+						data-supertype="pokémon"
+						data-rarity="rare rainbow alt"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1081px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Umbreon VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh7/215_hires.png"
+										alt="Front design of the Umbreon VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div
+										class="card__shine vmax single strike pokémon svelte-8e4zv4"
+									></div>
+									<div
+										class="card__glare vmax single strike rare rainbow alt svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="swsh182"
+						data-subtypes="vmax rapid strike"
+						data-supertype="pokémon"
+						data-rarity="rare rainbow alt"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 17px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Vaporeon VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swshp/SWSH182_hires.png"
+										alt="Front design of the Vaporeon VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div
+										class="card__shine vmax rapid strike pokémon svelte-8e4zv4"
+									></div>
+									<div
+										class="card__glare vmax rapid strike rare rainbow alt svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="270"
+						data-subtypes="vmax"
+						data-supertype="pokémon"
+						data-rarity="rare rainbow alt"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 16px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Espeon VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh8/270_hires.png"
+										alt="Front design of the Espeon VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vmax pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare vmax rare rainbow alt svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-v-star"><a href="#⚓-v-star">VStar</a></h2>
+				<p>
+					Again back to the <mark>diagonal gradients overlaying a texture</mark>, VStar
+					are quite
+					<mark>similar to teh Ultra Rare</mark>
+					(Full/Alt) cards. The cards are generally
+					<mark>brighter with a pastel hue</mark>, though, which makes the gradient and
+					texture more subtle.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="swsh195"
+						data-subtypes="vstar"
+						data-supertype="pokémon"
+						data-rarity="rare holo vstar"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 87px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Leafeon VSTAR."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swshp/SWSH195_hires.png"
+										alt="Front design of the Leafeon VSTAR Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vstar pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare vstar rare holo vstar svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="18"
+						data-subtypes="vstar"
+						data-supertype="pokémon"
+						data-rarity="rare holo vstar"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 767px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Charizard VSTAR."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9/18_hires.png"
+										alt="Front design of the Charizard VSTAR Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vstar pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare vstar rare holo vstar svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="swsh197"
+						data-subtypes="vstar"
+						data-supertype="pokémon"
+						data-rarity="rare holo vstar"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1378px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Glaceon VSTAR."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swshp/SWSH197_hires.png"
+										alt="Front design of the Glaceon VSTAR Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vstar pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare vstar rare holo vstar svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-trainer-full-art">
+					<a href="#⚓-trainer-full-art">Trainer Holo <sup>(Full Art)</sup></a>
+				</h2>
+				<p>
+					Again back to the <mark>diagonal gradients overlaying a texture</mark>, VStar
+					are quite
+					<mark>similar to teh Ultra Rare</mark>
+					(Full/Alt) cards. The cards are generally
+					<mark>brighter with a pastel hue</mark>, though, which makes the gradient and
+					texture more subtle.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="196"
+						data-subtypes="supporter"
+						data-supertype="trainer"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1157px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Peonia."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh6/196_hires.png"
+										alt="Front design of the Peonia Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine supporter trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare supporter rare ultra svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="167"
+						data-subtypes="supporter"
+						data-supertype="trainer"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1082px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Barry."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9/167_hires.png"
+										alt="Front design of the Barry Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine supporter trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare supporter rare ultra svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="183"
+						data-subtypes="supporter"
+						data-supertype="trainer"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1141px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Nessa."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh4/183_hires.png"
+										alt="Front design of the Nessa Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine supporter trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare supporter rare ultra svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="185"
+						data-subtypes="supporter"
+						data-supertype="trainer"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 191px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Pokémon Center Lady."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh4/185_hires.png"
+										alt="Front design of the Pokémon Center Lady Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine supporter trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare supporter rare ultra svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="189"
+						data-subtypes="supporter"
+						data-supertype="trainer"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 716px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Boss's Orders."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh2/189_hires.png"
+										alt="Front design of the Boss's Orders Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine supporter trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare supporter rare ultra svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="192"
+						data-subtypes="supporter"
+						data-supertype="trainer"
+						data-rarity="rare ultra"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 778px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Honey."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh6/192_hires.png"
+										alt="Front design of the Honey Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine supporter trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare supporter rare ultra svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-rainbow-rare">
+					<a href="#⚓-rainbow-rare">Rainbow Rare <sup>(VMax, VStar)</sup></a>
+				</h2>
+				<p>
+					The Rainbow Rare is a
+					<mark>super glittery effect on top of pastel gradients</mark>. This is achieved
+					with a background image of glitter/sparkles and a
+					<mark>color-burn/hard-light background blend</mark> for some pastel gradients.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="193"
+						data-subtypes="vmax"
+						data-supertype="pokémon"
+						data-rarity="rare rainbow"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 21px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Scizor VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh3/193_hires.png"
+										alt="Front design of the Scizor VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vmax pokémon svelte-8e4zv4"></div>
+									<div class="card__glare vmax rare rainbow svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="173"
+						data-subtypes="vstar"
+						data-supertype="pokémon"
+						data-rarity="rare rainbow"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 879px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Shaymin VSTAR."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9/173_hires.png"
+										alt="Front design of the Shaymin VSTAR Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vstar pokémon svelte-8e4zv4"></div>
+									<div class="card__glare vstar rare rainbow svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="190"
+						data-subtypes="vmax"
+						data-supertype="pokémon"
+						data-rarity="rare rainbow"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 470px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Butterfree VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh3/190_hires.png"
+										alt="Front design of the Butterfree VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vmax pokémon svelte-8e4zv4"></div>
+									<div class="card__glare vmax rare rainbow svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-secret-rare">
+					<a href="#⚓-secret-rare">Secret Rare <sup>(Gold)</sup></a>
+				</h2>
+				<p>
+					GOLD! The effect from Rainbow is borrowed, except the color of the gradients,
+					and the filter effects (hue) are different. There's also a different background
+					image with a more subtle overlay. This gives a sparkly gold look which is very
+					similar to reality!
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="213"
+						data-subtypes="stadium"
+						data-supertype="trainer"
+						data-rarity="rare secret"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1198px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Path to the Peak."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh10/213_hires.png"
+										alt="Front design of the Path to the Peak Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine stadium trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare stadium rare secret svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="214"
+						data-subtypes="stadium"
+						data-supertype="trainer"
+						data-rarity="rare secret"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1031px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Temple of Sinnoh."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh10/214_hires.png"
+										alt="Front design of the Temple of Sinnoh Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine stadium trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare stadium rare secret svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="232"
+						data-subtypes="stadium"
+						data-supertype="trainer"
+						data-rarity="rare secret"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 125px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Stormy Mountains."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh7/232_hires.png"
+										alt="Front design of the Stormy Mountains Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine stadium trainer svelte-8e4zv4"></div>
+									<div
+										class="card__glare stadium rare secret svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="181"
+						data-subtypes="item"
+						data-supertype="trainer"
+						data-rarity="rare secret"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1410px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Level Ball."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh5/181_hires.png"
+										alt="Front design of the Level Ball Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine item trainer svelte-8e4zv4"></div>
+									<div class="card__glare item rare secret svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="229"
+						data-subtypes="item"
+						data-supertype="trainer"
+						data-rarity="rare secret"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1016px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Boost Shake."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh7/229_hires.png"
+										alt="Front design of the Boost Shake Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine item trainer svelte-8e4zv4"></div>
+									<div class="card__glare item rare secret svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="213"
+						data-subtypes="pokémon tool"
+						data-supertype="trainer"
+						data-rarity="rare secret"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 492px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Air Balloon."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh1/213_hires.png"
+										alt="Front design of the Air Balloon Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div
+										class="card__shine pokémon tool trainer svelte-8e4zv4"
+									></div>
+									<div
+										class="card__glare pokémon tool rare secret svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="280"
+						data-subtypes="stage 1"
+						data-supertype="pokémon"
+						data-rarity="rare secret"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1403px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Flaaffy."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh8/280_hires.png"
+										alt="Front design of the Flaaffy Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine stage 1 pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare stage 1 rare secret svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="184"
+						data-subtypes="vstar"
+						data-supertype="pokémon"
+						data-rarity="rare secret"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 665px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Arceus VSTAR."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9/184_hires.png"
+										alt="Front design of the Arceus VSTAR Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vstar pokémon svelte-8e4zv4"></div>
+									<div class="card__glare vstar rare secret svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="227"
+						data-subtypes="stage 2 rapid strike"
+						data-supertype="pokémon"
+						data-rarity="rare secret"
+						data-gallery="false"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 561px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Inteleon."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh7/227_hires.png"
+										alt="Front design of the Inteleon Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div
+										class="card__shine stage 2 rapid strike pokémon svelte-8e4zv4"
+									></div>
+									<div
+										class="card__glare stage 2 rapid strike rare secret svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+				<h2 id="⚓-trainer-gallery-v">
+					<a href="#⚓-trainer-gallery-v">Trainer Gallery <sup>(V / VMax)</sup></a>
+				</h2>
+				<p>
+					The V and VMax cards in the Trainer Gallery are generally quite similar to the
+					normal V and VMax cards, so here I've just tweaked the values a little and added
+					a different background texture.
+				</p>
+				<section class="card-grid svelte-12sq7m7">
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="tg16"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare holo v"
+						data-gallery="true"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1442px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Mimikyu V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9tg/TG16_hires.png"
+										alt="Front design of the Mimikyu V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare basic v rare holo v svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="tg18"
+						data-subtypes="basic v single strike"
+						data-supertype="pokémon"
+						data-rarity="rare holo v"
+						data-gallery="true"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1298px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Single Strike Urshifu V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9tg/TG18_hires.png"
+										alt="Front design of the Single Strike Urshifu V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div
+										class="card__shine basic v single strike pokémon svelte-8e4zv4"
+									></div>
+									<div
+										class="card__glare basic v single strike rare holo v svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="tg17"
+						data-subtypes="basic v"
+						data-supertype="pokémon"
+						data-rarity="rare holo v"
+						data-gallery="true"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 645px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Shadow Rider Calyrex V."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh10tg/TG17_hires.png"
+										alt="Front design of the Shadow Rider Calyrex V Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine basic v pokémon svelte-8e4zv4"></div>
+									<div
+										class="card__glare basic v rare holo v svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="tg17"
+						data-subtypes="vmax"
+						data-supertype="pokémon"
+						data-rarity="rare holo v"
+						data-gallery="true"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 1362px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Mimikyu VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9tg/TG17_hires.png"
+										alt="Front design of the Mimikyu VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vmax pokémon svelte-8e4zv4"></div>
+									<div class="card__glare vmax rare holo v svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="tg19"
+						data-subtypes="vmax single strike"
+						data-supertype="pokémon"
+						data-rarity="rare holo v"
+						data-gallery="true"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 665px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Single Strike Urshifu VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh9tg/TG19_hires.png"
+										alt="Front design of the Single Strike Urshifu VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div
+										class="card__shine vmax single strike pokémon svelte-8e4zv4"
+									></div>
+									<div
+										class="card__glare vmax single strike rare holo v svelte-y0attf"
+									></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div
+						class="card svelte-166jv0z loading"
+						data-number="tg18"
+						data-subtypes="vmax"
+						data-supertype="pokémon"
+						data-rarity="rare holo v"
+						data-gallery="true"
+						style="
+							--mx: 50%;
+							--my: 50%;
+							--tx: 0px;
+							--ty: 0px;
+							--s: 1;
+							--o: 0;
+							--rx: 0deg;
+							--ry: 0deg;
+							--pos: 50% 50%;
+							--posx: 50%;
+							--posy: 50%;
+							--hyp: 0;
+							--galaxybg: center 280px;
+						"
+					>
+						<div class="card__translater svelte-166jv0z">
+							<button
+								class="card__rotator svelte-166jv0z"
+								aria-label="Expand the Pokemon Card; Shadow Rider Calyrex VMAX."
+								tabindex="0"
+							>
+								<img
+									class="card__back svelte-166jv0z"
+									src="https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg"
+									alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+									loading="lazy"
+									width="660"
+									height="921"
+								/>
+								<div class="card__front svelte-166jv0z">
+									<img
+										src="https://images.pokemontcg.io/swsh10tg/TG18_hires.png"
+										alt="Front design of the Shadow Rider Calyrex VMAX Pokemon Card, with the stats and info around the edge"
+										loading="lazy"
+										width="660"
+										height="921"
+										class="svelte-166jv0z"
+									/>
+									<div class="card__shine vmax pokémon svelte-8e4zv4"></div>
+									<div class="card__glare vmax rare holo v svelte-y0attf"></div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			<div class="back-to-top svelte-1eve913">
+				<a href="#⚓-top" class="svelte-1eve913">Back to Top</a>
+			</div>
+		</div>
+	</body>
+</html>
