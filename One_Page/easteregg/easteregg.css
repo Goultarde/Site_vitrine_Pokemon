@@ -1,0 +1,7 @@
+.rotation{
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+.rotation:hover{
+    transform: rotate();
+}
