@@ -24,7 +24,7 @@ body{
         rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.8)
         ),
-        url(../img/arceus\ fhd.jpg);
+        url(../img/arceus\ fhd.webp);
     background-attachment: fixed;
     background-position: center;
     background-size: no-repeat;
@@ -42,7 +42,7 @@ body{
             rgba(0, 0, 0, 0.1),
             rgba(0, 0, 0, 0.8)
             ),
-            url(../img//Pokeballbleu.jpg);
+            url(../img//Pokeballbleu.webp);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
@@ -54,7 +54,7 @@ body{
         rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.8)
         ),
-        url(../img/elector\ w1.jpg);
+        url(../img/elector\ w1.webp);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
