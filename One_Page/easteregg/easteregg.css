@@ -1,7 +1,7 @@
 .rotation{
-    transition-duration: 0.4s;
+    transition-duration: 1s;
     transition-property: transform;
 }
 .rotation:hover{
-    transform: rotate();
+    transform: rotate(1080deg);
 }
