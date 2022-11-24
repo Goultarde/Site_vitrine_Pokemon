@@ -7,7 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
 			name="description"
-			content="Ce site internet à été conçu dans le cadre d'un projet dans l'école Guardia Cybersécurity School, c'est un site vitrine du site officiel de pokemon."
+			content="Ce site internet à été conçu dans le cadre d'un projet dans l'école 
+			Guardia Cybersécurity School, c'est un site vitrine du site officiel de pokemon."
 		/>
 		<link rel="shortcut icon" href="img/masterball.png" />
 		<!-- Lien css de bootstrap -->
@@ -59,6 +60,9 @@
 								>
 							</li>
 							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#intro">Intro</a>
+							</li>
+							<li class="nav-item">
 								<a class="nav-link" href="#règles_du_jeu">Règles du Jeu</a>
 							</li>
 							<li>
@@ -72,6 +76,7 @@
 							</li>
 						</ul>
 					</div>
+					<!--Menu déroulant-->
 					<div class="nav-item dropdown">
 						<button
 							class="btn dropdown-toggle stylebtn"
@@ -123,7 +128,6 @@
 									<input
 										type="text"
 										class="form-control"
-										placeholder="Entée votre prenom"
 										id="validationServer01"
 										required
 									/>
@@ -131,12 +135,7 @@
 								</div>
 								<div class="col-md-4">
 									<label for="exampleInputEmail1" class="form-label">Nom</label>
-									<input
-										type="text"
-										class="form-control"
-										placeholder="Entée votre nom"
-										required
-									/>
+									<input type="text" class="form-control" required />
 									<span class="invalid-feedback">Le nom est obligatoire</span>
 								</div>
 								<div class="mb-3">
@@ -151,7 +150,7 @@
 										required
 									/>
 									<span class="invalid-feedback"
-										>Un email valid est obligatoire</span
+										>Un email valide est obligatoire</span
 									>
 								</div>
 								<div class="mb-3">
@@ -200,6 +199,7 @@
 				<div class="row justify-content-center">
 					<div class="espace_petit"></div>
 					<div class="col-5 roundbord opacity">
+						<!--Petit mot du staff-->
 						<p>
 							Bonjour, nous sommes des élèves de guardia et dans le cardre d'un
 							projet, moi harouna COULIBALY et mon partenaire Guillaume ... Avons crée
@@ -211,7 +211,7 @@
 			</div>
 		</div>
 		<!--Première section-->
-		<section class="banner pt-5">
+		<section class="banner">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-7 roundbord backstylewhite">
@@ -260,29 +260,27 @@
 			</div>
 		</section>
 		<!--Deuxième section-->
-		<section class="banner2">
+		<section class="banner2" id="intro">
 			<div class="container">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="espace_moyen"></div>
-						<div class="col-2 roundbord backstylewhite">
-							<div class="text-center">
-								<h2 class="change_taille_h2">Partez à l'aventure!</h2>
-							</div>
+				<div class="row justify-content-center">
+					<div class="espace_moyen"></div>
+					<div class="col-2 roundbord backstylewhite">
+						<div class="text-center">
+							<h2 class="change_taille_h2">Partez à l'aventure!</h2>
 						</div>
-						<div class="espace_moyen"></div>
 					</div>
-					<div class="row">
-						<div class="col-9 mx-auto roundbord">
-							<div class="container">
-								<div class="ratio ratio-16x9">
-									<iframe
-										class="embed-responsive-item"
-										src="https://www.youtube.com/embed/FYIAE9xw4e4"
-										title="Pokémon Écarlate & Pokémon Violet - Bienvenue à Paldea ! (Nintendo Switch)"
-										allowfullscreen
-									></iframe>
-								</div>
+					<div class="espace_moyen"></div>
+				</div>
+				<div class="row">
+					<div class="col-9 mx-auto roundbord">
+						<div class="container">
+							<div class="ratio ratio-16x9">
+								<iframe
+									class="embed-responsive-item"
+									src="https://www.youtube.com/embed/FYIAE9xw4e4"
+									title="Pokémon Écarlate & Pokémon Violet - Bienvenue à Paldea ! (Nintendo Switch)"
+									allowfullscreen
+								></iframe>
 							</div>
 						</div>
 					</div>
@@ -560,50 +558,13 @@
 			</div>
 		</section>
 		<!-- Quatrième section-->
-		<!--
+
 		<section class="banner4" id="contact">
+			<!---->
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="espace_large"></div>
-					<div class="col-3 backstylewhite roundbord">formulaire de contact</div>
-				</div>
-				
-				<div class="row justify-content-center">
-					
-					<div class="col-10 backstylewhite roundbord">
-						<form>
-							<div class="mb-3">
-								<label for="exampleInputEmail1" class="form-label"
-									>Email address</label
-								>
-								<input
-									type="email"
-									class="form-control"
-									id="exampleInputEmail1"
-									aria-describedby="emailHelp"
-								/>
-								<div id="emailHelp" class="form-text">
-									Votre email n'est divulger à personnes.
-								</div>
-							</div>
-							<div class="mb-3">
-								<label for="exampleInputPassword1" class="form-label"
-									>commentaire</label
-								>
-								<input
-									type="password"
-									class="form-control"
-									id="exampleInputPassword1"
-								/>
-							</div>
-							<div class="mb-3">
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</div>
-						</form>
-					</div>
-					-->
-
-		<!--Google form
+					<!--Google form-->
 					<iframe
 						class="content_banner4"
 						title="google form"
@@ -614,15 +575,13 @@
 						marginheight="0"
 						marginwidth="0"
 						>Chargement…
-					</iframe> 
+					</iframe>
 				</div>
-				
 			</div>
 			<div class="row">
 				<div class="espace_petit"></div>
 			</div>
 		</section>
-		-->
 
 		<footer class="text-center">
 			<!-- Copyright -->
@@ -632,7 +591,7 @@
 			<!-- Copyright -->
 		</footer>
 
-		<!--Scripts-->>
+		<!--Scripts-->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
